@@ -1,0 +1,125 @@
+<header id="cs-navigation">
+  <!-- Top Bar (desktop only) -->
+  <div class="cs-top-bar">
+    <div class="cs-top-container">
+      <ul class="cs-social-list">
+        <li class="cs-social-item">
+          <a href="{{ site.social.facebook }}" class="cs-social-link" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="/assets/svgs/facebook.svg" alt="" width="14" height="14" loading="lazy" decoding="async">
+          </a>
+        </li>
+        <li class="cs-social-item">
+          <a href="{{ site.social.instagram }}" class="cs-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="/assets/svgs/instagram.svg" alt="" width="14" height="14" loading="lazy" decoding="async">
+          </a>
+        </li>
+        <li class="cs-social-item">
+          <a href="{{ site.social.linkedin }}" class="cs-social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="/assets/svgs/linkedin.svg" alt="" width="14" height="14" loading="lazy" decoding="async">
+          </a>
+        </li>
+      </ul>
+      <ul class="cs-info-list">
+        <li class="cs-info-item">
+          <img class="cs-info-icon" src="/assets/svgs/map-pin.svg" alt="" width="16" height="16" loading="lazy" decoding="async">
+          <span class="cs-info-text">{{ site.address.full }}</span>
+        </li>
+        <li class="cs-info-item">
+          <img class="cs-info-icon" src="/assets/svgs/clock.svg" alt="" width="16" height="16" loading="lazy" decoding="async">
+          <span class="cs-info-text">{{ site.hours }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <div class="cs-container">
+    <!-- Mobile Toggle -->
+    <nav class="cs-nav">
+      <button class="cs-toggle" aria-label="mobile menu toggle" aria-expanded="false">
+        <div class="cs-box">
+          <span class="cs-line cs-line1"></span>
+          <span class="cs-line cs-line2"></span>
+          <span class="cs-line cs-line3"></span>
+        </div>
+      </button>
+
+      <div class="cs-ul-wrapper">
+        <ul class="cs-ul">
+          <li class="cs-li">
+            <a href="/about/" class="cs-li-link{% if page.url == '/about/' %} cs-active{% endif %}">About</a>
+          </li>
+          <li class="cs-li cs-dropdown">
+            <button class="cs-li-link cs-dropdown-toggle{% if '/services/' in page.url %} cs-active{% endif %}">
+              Services
+              <span class="cs-drop-icon"></span>
+            </button>
+            <div class="cs-mega-menu">
+              <div class="cs-mega-grid">
+                <div class="cs-mega-col">
+                  <a href="/services/landscaping/" class="cs-mega-heading">Landscaping</a>
+                  <ul class="cs-mega-list">
+                    <li><a href="/services/landscaping/sod-installation/" class="cs-mega-link">Sod Installation</a></li>
+                    <li><a href="/services/landscaping/artificial-turf/" class="cs-mega-link">Artificial Turf</a></li>
+                    <li><a href="/services/landscaping/planting-gardening/" class="cs-mega-link">Planting &amp; Gardening</a></li>
+                    <li><a href="/services/landscaping/raised-garden-beds/" class="cs-mega-link">Raised Garden Beds</a></li>
+                  </ul>
+                </div>
+                <div class="cs-mega-col">
+                  <a href="/services/hardscaping/" class="cs-mega-heading">Hardscaping</a>
+                  <ul class="cs-mega-list">
+                    <li><a href="/services/hardscaping/patios/" class="cs-mega-link">Patios</a></li>
+                    <li><a href="/services/hardscaping/walkways/" class="cs-mega-link">Walkways</a></li>
+                    <li><a href="/services/hardscaping/driveways/" class="cs-mega-link">Driveways</a></li>
+                    <li><a href="/services/hardscaping/pavers/" class="cs-mega-link">Pavers</a></li>
+                    <li><a href="/services/hardscaping/stone-borders/" class="cs-mega-link">Stone Borders</a></li>
+                  </ul>
+                </div>
+                <div class="cs-mega-col">
+                  <a href="/services/irrigation/" class="cs-mega-heading">Irrigation</a>
+                  <ul class="cs-mega-list">
+                    <li><a href="/services/irrigation/sprinkler-systems/" class="cs-mega-link">Sprinkler Systems</a></li>
+                    <li><a href="/services/irrigation/sprinkler-repair/" class="cs-mega-link">Sprinkler Repair</a></li>
+                    <li><a href="/services/irrigation/drip-irrigation/" class="cs-mega-link">Drip Irrigation</a></li>
+                    <li><a href="/services/irrigation/smart-controllers/" class="cs-mega-link">Smart Controllers</a></li>
+                    <li><a href="/services/irrigation/french-drains/" class="cs-mega-link">French Drains</a></li>
+                    <li><a href="/services/irrigation/stormwater-mitigation/" class="cs-mega-link">Stormwater Mitigation</a></li>
+                    <li><a href="/services/irrigation/erosion-control/" class="cs-mega-link">Erosion Control</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cs-mega-standalone">
+                <a href="/services/landscape-design/" class="cs-mega-heading">Landscape Design</a>
+                <a href="/services/landscaping/xeriscaping/" class="cs-mega-heading">Xeriscaping</a>
+                <a href="/services/landscape-maintenance/" class="cs-mega-heading">Landscape Maintenance</a>
+              </div>
+            </div>
+          </li>
+          <li class="cs-li">
+            <a href="/portfolio/" class="cs-li-link{% if page.url == '/portfolio/' %} cs-active{% endif %}">Portfolio</a>
+          </li>
+          <li class="cs-li">
+            <a href="/service-areas/" class="cs-li-link{% if '/service-areas/' in page.url %} cs-active{% endif %}">Service Areas</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Logo -->
+    <a class="cs-logo" href="/" aria-label="{{ site.name }} home">
+      <img src="/assets/images/logo-circle-nav.webp" alt="{{ site.name }}" width="160" height="160" loading="eager" decoding="async">
+    </a>
+
+    <!-- Phone CTA -->
+    <div class="cs-call-group">
+      <a href="tel:{{ site.phoneRaw }}" class="cs-phone-icon" aria-label="Call {{ site.phone }}">
+        <img src="/assets/svgs/phone.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+      </a>
+      <div class="cs-call-info">
+        <span class="cs-call-label">Call Us Today</span>
+        <a href="tel:{{ site.phoneRaw }}" class="cs-call-number">{{ site.phone }}</a>
+      </div>
+      <a href="/contact/" class="cs-button-solid cs-nav-button">Schedule an Estimate</a>
+    </div>
+  </div>
+</header>

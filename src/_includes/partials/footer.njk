@@ -1,0 +1,100 @@
+<footer id="cs-footer-079">
+  <!-- Logo Badge -->
+  <a href="/" class="cs-logo-badge" aria-label="{{ site.name }} home">
+    <img src="/assets/images/logo-circle-216.webp" alt="{{ site.name }}" width="216" height="216" loading="lazy" decoding="async">
+  </a>
+
+  <!-- Watermark -->
+  <div class="cs-watermark-wrap">
+    <span class="cs-watermark">{{ site.shortName }}</span>
+  </div>
+
+  <div class="cs-container">
+    <!-- Top Grid -->
+    <div class="cs-footer-top">
+      <!-- About Column -->
+      <div class="cs-about">
+        <p class="cs-text">{{ site.name }} transforms Las Cruces yards with water-wise landscape design, custom hardscaping, and year-round maintenance built for the New Mexico climate.</p>
+        <ul class="cs-social">
+          <li class="cs-social-item">
+            <a href="{{ site.social.facebook }}" class="cs-social-link" target="_blank" rel="noopener" aria-label="Facebook">
+              <img src="/assets/svgs/facebook.svg" alt="" width="12" height="12" loading="lazy" decoding="async">
+            </a>
+          </li>
+          <li class="cs-social-item">
+            <a href="{{ site.social.instagram }}" class="cs-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+              <img src="/assets/svgs/instagram.svg" alt="" width="12" height="12" loading="lazy" decoding="async">
+            </a>
+          </li>
+          <li class="cs-social-item">
+            <a href="{{ site.social.linkedin }}" class="cs-social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <img src="/assets/svgs/linkedin.svg" alt="" width="12" height="12" loading="lazy" decoding="async">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Services Column -->
+      <div>
+        <h2 class="cs-col-heading">Services</h2>
+        <ul class="cs-links-stack">
+          <li><a href="/services/landscape-design/" class="cs-link">Landscape Design</a></li>
+          <li><a href="/services/landscaping/" class="cs-link">Landscaping</a></li>
+          <li><a href="/services/hardscaping/" class="cs-link">Hardscaping</a></li>
+          <li><a href="/services/irrigation/" class="cs-link">Irrigation &amp; Sprinklers</a></li>
+          <li><a href="/services/landscape-maintenance/" class="cs-link">Landscape Maintenance</a></li>
+          <li><a href="/services/" class="cs-link cs-link-strong">View All Services &rarr;</a></li>
+        </ul>
+      </div>
+
+      <!-- Service Areas Column -->
+      <div>
+        <h2 class="cs-col-heading">Areas We Serve</h2>
+        <ul class="cs-links-stack">
+          <li><a href="/service-areas/las-cruces-nm/" class="cs-link">Las Cruces, NM</a></li>
+          <li><a href="/service-areas/mesilla-nm/" class="cs-link">Mesilla, NM</a></li>
+          <li><a href="/service-areas/dona-ana-nm/" class="cs-link">Do&ntilde;a Ana, NM</a></li>
+          <li><a href="/service-areas/sonoma-ranch-nm/" class="cs-link">Sonoma Ranch</a></li>
+          <li><a href="/service-areas/picacho-hills-nm/" class="cs-link">Picacho Hills</a></li>
+          <li><a href="/service-areas/east-mesa-nm/" class="cs-link">East Mesa</a></li>
+          <li><a href="/service-areas/anthony-nm/" class="cs-link">Anthony, NM</a></li>
+          <li><a href="/service-areas/sunland-park-nm/" class="cs-link">Sunland Park, NM</a></li>
+          <li><a href="/service-areas/" class="cs-link cs-link-strong">View All Service Areas &rarr;</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Column -->
+      <div>
+        <h2 class="cs-col-heading">Contact Information</h2>
+        <ul class="cs-contact-list">
+          <li class="cs-contact-item">
+            <img class="cs-contact-icon" src="/assets/svgs/clock.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <span>{{ site.hours }}</span>
+          </li>
+          <li class="cs-contact-item">
+            <img class="cs-contact-icon" src="/assets/svgs/phone.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <a href="tel:{{ site.phoneRaw }}" class="cs-contact-link">{{ site.phone }}</a>
+          </li>
+          <li class="cs-contact-item">
+            <img class="cs-contact-icon" src="/assets/svgs/message.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <a href="mailto:{{ site.email }}" class="cs-contact-link">{{ site.email }}</a>
+          </li>
+          <li class="cs-contact-item">
+            <img class="cs-contact-icon" src="/assets/svgs/map-pin.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+            <a href="{{ site.googleMapsUrl }}" class="cs-contact-link" target="_blank" rel="noopener">{{ site.address.full }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="cs-footer-bottom">
+      <span class="cs-copyright">&copy; Copyright {{ "now" | date("Y") }} &mdash; {{ site.name }}</span>
+      <ul class="cs-legal">
+        <li><a href="/privacy/" class="cs-legal-link">Privacy Policy</a></li>
+        <li class="cs-legal-sep">|</li>
+        <li><a href="/terms/" class="cs-legal-link">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

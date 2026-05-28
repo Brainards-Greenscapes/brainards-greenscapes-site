@@ -1,0 +1,14 @@
+{
+  "name": "brainards-greenscapes",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Brainard's Greenscapes — Las Cruces, NM landscaping company website",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
