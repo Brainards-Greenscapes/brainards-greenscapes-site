@@ -4,6 +4,7 @@ title: "Landscaping in Las Cruces, NM | Brainard's Greenscapes"
 description: "Award-winning landscaping in Las Cruces, NM. Xeriscape design, hardscaping, irrigation, and maintenance backed by a workmanship guarantee. Free estimate."
 ---
 
+{# ── Hero ── #}
 <section id="hero-143">
   <div class="cs-container">
     <div class="cs-content">
@@ -37,4 +38,436 @@ description: "Award-winning landscaping in Las Cruces, NM. Xeriscape design, har
   </div>
   <img class="cs-fern cs-fern-top cs-hide-on-mobile" src="/assets/svgs/fern.svg" alt="" width="130" height="260" loading="lazy" decoding="async">
   <img class="cs-fern cs-fern-bottom cs-hide-on-mobile" src="/assets/svgs/fern.svg" alt="" width="150" height="300" loading="lazy" decoding="async">
+</section>
+
+{# ── Achievements ── #}
+<section id="achievements-500">
+  <div class="cs-container">
+    <div class="cs-award">
+      <img class="cs-award-icon" src="/assets/svgs/award-2019.svg" alt="2019 Award" width="120" height="120" loading="lazy" decoding="async">
+      <span class="cs-award-year">2019</span>
+      <p class="cs-award-text">Recognized for Excellence in Landscape Design</p>
+    </div>
+    <div class="cs-award cs-award-center">
+      <img class="cs-trophy-icon" src="/assets/svgs/trophy.svg" alt="Trophy" width="192" height="192" loading="lazy" decoding="async">
+      <span class="cs-topper">Achievements</span>
+      <span class="cs-award-location">{{ site.address.full }}</span>
+      <h2 class="cs-title">Recognized for Excellence in Landscape Design</h2>
+    </div>
+    <div class="cs-award">
+      <img class="cs-award-icon" src="/assets/svgs/award-2022.svg" alt="2022 Award" width="120" height="120" loading="lazy" decoding="async">
+      <span class="cs-award-year">2022</span>
+      <p class="cs-award-text">Recognized for Excellence in Landscape Design</p>
+    </div>
+  </div>
+</section>
+
+{# ── Services ── #}
+<section id="services-500">
+  <div class="cs-container">
+    <div class="cs-picture">
+      <img src="/assets/images/brainards-patios-1-1f6f751d.jpeg" alt="Flagstone patio with raised stone planter and lush turf installed by Brainard's Greenscapes" width="500" height="667" loading="lazy" decoding="async">
+    </div>
+    <div>
+      <ul class="cs-card-group">
+        {%- for service in services %}
+        <li class="cs-item">
+          <div class="cs-icon-wrap">
+            <img src="{{ service.icon }}" alt="" width="56" height="56" loading="lazy" decoding="async">
+          </div>
+          <div class="cs-item-body">
+            <h3 class="cs-item-title">{{ service.title }}</h3>
+            <p class="cs-item-text">{{ service.description }}</p>
+            <a href="{{ service.url }}" class="cs-item-link">
+              {{ service.linkText }}
+              <img src="/assets/svgs/arrow-up-right.svg" alt="" width="14" height="14" loading="lazy" decoding="async">
+            </a>
+          </div>
+        </li>
+        {%- endfor %}
+      </ul>
+      <div class="cs-button-wrapper">
+        <a href="/services/" class="cs-button-solid">View All Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ── Process ── #}
+<section id="process-500">
+  <div class="cs-container">
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <div class="cs-icon-wrap">
+          <img src="/assets/svgs/icon-lightbulb-light.svg" alt="" width="40" height="40" loading="lazy" decoding="async">
+        </div>
+        <h3 class="cs-item-title">Free On-Site Consultation</h3>
+        <p class="cs-item-text">We walk your property, listen to your vision, and assess sun, soil, and drainage at no cost to you.</p>
+      </li>
+      <li class="cs-item">
+        <div class="cs-icon-wrap">
+          <img src="/assets/svgs/icon-lightbulb-light.svg" alt="" width="40" height="40" loading="lazy" decoding="async">
+        </div>
+        <h3 class="cs-item-title">Custom Design &amp; Quote</h3>
+        <p class="cs-item-text">You receive a tailored design and itemized proposal built for the Las Cruces climate and your budget.</p>
+      </li>
+      <li class="cs-item">
+        <div class="cs-icon-wrap">
+          <img src="/assets/svgs/icon-lightbulb-light.svg" alt="" width="40" height="40" loading="lazy" decoding="async">
+        </div>
+        <h3 class="cs-item-title">Expert Installation</h3>
+        <p class="cs-item-text">Our in-house crews handle grading, hardscape, planting, and irrigation on a clear, agreed-upon timeline.</p>
+      </li>
+      <li class="cs-item">
+        <div class="cs-icon-wrap">
+          <img src="/assets/svgs/icon-lightbulb-light.svg" alt="" width="40" height="40" loading="lazy" decoding="async">
+        </div>
+        <h3 class="cs-item-title">Lifetime-Backed Care</h3>
+        <p class="cs-item-text">Every project is backed by our workmanship guarantee, with optional seasonal maintenance plans.</p>
+      </li>
+    </ul>
+    <img class="cs-vine cs-vine-1 cs-hide-on-mobile" src="/assets/svgs/leaf-down.svg" alt="" width="88" height="170" loading="lazy" decoding="async">
+    <img class="cs-vine cs-vine-2 cs-hide-on-mobile" src="/assets/svgs/leaf-up.svg" alt="" width="88" height="170" loading="lazy" decoding="async">
+    <img class="cs-vine cs-vine-3 cs-hide-on-mobile" src="/assets/svgs/leaf-down.svg" alt="" width="88" height="170" loading="lazy" decoding="async">
+  </div>
+</section>
+
+{# ── Contact Form ── #}
+<section id="contact-500">
+  <img class="cs-leaf cs-leaf-left cs-hide-on-mobile" src="/assets/svgs/fern.svg" alt="" width="224" height="224" loading="lazy" decoding="async">
+  <img class="cs-leaf cs-leaf-right cs-hide-on-mobile" src="/assets/svgs/fern.svg" alt="" width="224" height="224" loading="lazy" decoding="async">
+  <div class="cs-container">
+    <div class="cs-header">
+      <span class="cs-topper">
+        <span class="cs-topper-dot"></span>
+        <img class="cs-topper-arrow" src="/assets/svgs/arrow-right.svg" alt="" width="48" height="8" loading="lazy" decoding="async">
+        Contact
+      </span>
+      <h2 class="cs-title">Let's Talk About Your Outdoor Vision</h2>
+      <p class="cs-text">Transform your front yard, backyard, or commercial property with drought-tolerant landscaping, custom xeriscape design, and professional hardscaping built for the Las Cruces climate.</p>
+    </div>
+    <div class="cs-layout">
+      {# Contact info card #}
+      <div class="cs-info-card">
+        <div class="cs-info-picture">
+          <img src="/assets/images/brainards-pavers-1-cfa6a793.jpeg" alt="Paver walkway with stone retaining wall side yard by Brainard's Greenscapes" width="506" height="850" loading="lazy" decoding="async">
+        </div>
+        <div class="cs-info-body">
+          <h3 class="cs-info-heading">Contact</h3>
+          <ul class="cs-info-list">
+            <li class="cs-info-item">
+              <span class="cs-info-label">Email</span>
+              <a href="mailto:{{ site.email }}" class="cs-info-value">{{ site.email }}</a>
+            </li>
+            <li class="cs-info-item">
+              <span class="cs-info-label">Phone</span>
+              <a href="tel:{{ site.phoneRaw }}" class="cs-info-value">{{ site.phone }}</a>
+            </li>
+            <li class="cs-info-item">
+              <span class="cs-info-label">Address</span>
+              <a href="{{ site.googleMapsUrl }}" class="cs-info-value" target="_blank" rel="noopener">{{ site.address.full }}</a>
+            </li>
+          </ul>
+          <h3 class="cs-info-heading cs-info-heading-social">Find Us On</h3>
+          <ul class="cs-social-list">
+            <li>
+              <a href="{{ site.social.facebook }}" class="cs-social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                <img src="/assets/svgs/facebook.svg" alt="" width="12" height="12" loading="lazy" decoding="async">
+              </a>
+            </li>
+            <li>
+              <a href="{{ site.social.instagram }}" class="cs-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                <img src="/assets/svgs/instagram.svg" alt="" width="12" height="12" loading="lazy" decoding="async">
+              </a>
+            </li>
+            <li>
+              <a href="{{ site.social.linkedin }}" class="cs-social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <img src="/assets/svgs/linkedin.svg" alt="" width="12" height="12" loading="lazy" decoding="async">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {# Contact form #}
+      <div class="cs-form-wrapper">
+        <form class="cs-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <p class="cs-honeypot">
+            <label>Don't fill this out: <input name="bot-field"></label>
+          </p>
+          <span class="cs-form-topper">Contact</span>
+          <h3 class="cs-form-title">Get in Touch</h3>
+          <div class="cs-row">
+            <label class="cs-label">
+              Name <span class="cs-required">*</span>
+              <input class="cs-input" type="text" name="name" required placeholder="Full name">
+            </label>
+            <label class="cs-label">
+              Email <span class="cs-required">*</span>
+              <input class="cs-input" type="email" name="email" required placeholder="Email address">
+            </label>
+          </div>
+          <div class="cs-row">
+            <label class="cs-label">
+              Phone
+              <input class="cs-input" type="tel" name="phone" placeholder="Phone number">
+            </label>
+            <label class="cs-label">
+              How Did You Find Us?
+              <input class="cs-input" type="text" name="referral" placeholder="Google, referral, etc.">
+            </label>
+          </div>
+          <fieldset class="cs-services">
+            <legend>What Services Are You Interested In? <span class="cs-required">*</span></legend>
+            <div class="cs-services-grid">
+              {%- for service in services %}
+              <label class="cs-check">
+                <input type="checkbox" name="services" value="{{ service.title }}">
+                {{ service.title }}
+              </label>
+              {%- endfor %}
+            </div>
+          </fieldset>
+          <label class="cs-label">
+            Message <span class="cs-required">*</span>
+            <textarea class="cs-textarea" name="message" required placeholder="Tell us about your project..."></textarea>
+          </label>
+          <button type="submit" class="cs-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ── About Preview ── #}
+<section id="about-500">
+  <div class="cs-container">
+    <div class="cs-header">
+      <div class="cs-content">
+        <span class="cs-topper">
+          <span class="cs-topper-dot"></span>
+          <img class="cs-topper-arrow" src="/assets/svgs/arrow-right.svg" alt="" width="48" height="8" loading="lazy" decoding="async">
+          About Us
+        </span>
+        <h2 class="cs-title">Let's Talk About Your Outdoor Vision</h2>
+      </div>
+      <div class="cs-header-aside">
+        <p class="cs-text">Transform your front yard, backyard, or commercial property with drought-tolerant landscaping, custom xeriscape design, and professional hardscaping built for the Las Cruces climate.</p>
+        <a href="/about/" class="cs-button-solid">Learn More About Us</a>
+      </div>
+    </div>
+    <div class="cs-picture">
+      <img src="/assets/images/brainards-artificial-turf-1-922aa302.jpeg" alt="Large artificial turf front lawn install at a Las Cruces home" width="1280" height="429" loading="lazy" decoding="async">
+    </div>
+    <ul class="cs-stats">
+      <li class="cs-stat">
+        <span class="cs-stat-number">500+</span>
+        <span class="cs-stat-label">Projects Completed</span>
+      </li>
+      <li class="cs-stat">
+        <span class="cs-stat-number">{{ site.yearsInBusiness }}+</span>
+        <span class="cs-stat-label">Years Experience</span>
+      </li>
+      <li class="cs-stat">
+        <span class="cs-stat-number">5/5</span>
+        <span class="cs-stat-label">Average Rating</span>
+      </li>
+      <li class="cs-stat">
+        <span class="cs-stat-number">100%</span>
+        <span class="cs-stat-label">Quality Guarantee</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{# ── Before / After Compare ── #}
+<section id="about-compare-500">
+  <div class="cs-container">
+    <div class="cs-compare" style="--pos:50%">
+      <figure class="cs-compare-after">
+        <img src="/assets/images/brainards-turf-after-1-142579cb.jpeg" alt="After: backyard with newly installed artificial turf and clean gravel borders" width="684" height="620" loading="lazy" decoding="async">
+      </figure>
+      <figure class="cs-compare-before">
+        <img src="/assets/images/brainards-turf-before-1-112df5e3.jpeg" alt="Before: bare backyard with dirt, weeds, and debris prior to landscaping" width="684" height="620" loading="lazy" decoding="async">
+      </figure>
+      <span class="cs-compare-label cs-compare-label-before">Before</span>
+      <span class="cs-compare-label cs-compare-label-after">After</span>
+      <div class="cs-compare-line"></div>
+      <div class="cs-compare-knob">
+        <img src="/assets/images/logo-circle-96.webp" alt="Brainard's Greenscapes" width="58" height="58" loading="lazy" decoding="async">
+      </div>
+      <input type="range" class="cs-compare-range" min="0" max="100" value="50" aria-label="Compare before and after">
+    </div>
+    <div class="cs-content">
+      <div class="cs-header">
+        <span class="cs-topper">
+          <span class="cs-topper-dot"></span>
+          <img class="cs-topper-arrow" src="/assets/svgs/arrow-right.svg" alt="" width="48" height="8" loading="lazy" decoding="async">
+          About {{ site.name }}
+        </span>
+        <h2 class="cs-title">Let's Talk About Your Outdoor Vision</h2>
+      </div>
+      <ul class="cs-bullets">
+        <li>Transform your front yard, backyard, or commercial property with drought-tolerant landscaping.</li>
+        <li>Custom xeriscape design that thrives in the Las Cruces climate.</li>
+        <li>Professional hardscaping that elevates every outdoor living space.</li>
+      </ul>
+      <div class="cs-button-group">
+        <a href="/contact/" class="cs-button-solid cs-nav-button">Schedule an Estimate</a>
+        <a href="tel:{{ site.phoneRaw }}" class="cs-phone-button">
+          <img src="/assets/svgs/phone.svg" alt="" width="14" height="14" loading="lazy" decoding="async">
+          {{ site.phone }}
+        </a>
+      </div>
+      <div class="cs-testimonial">
+        <img class="cs-testimonial-stars" src="/assets/svgs/stars.svg" alt="Five stars" width="119" height="20" loading="lazy" decoding="async">
+        <blockquote class="cs-testimonial-text">"So glad I called David at Brainard's Greenscapes! I needed help with erosion control and drainage. I also needed some landscaping and trees. David and his amazing crew did a fabulous job!"</blockquote>
+        <div class="cs-testimonial-author">
+          <span class="cs-testimonial-name">David T.</span>
+          <span class="cs-testimonial-role">Residential Client</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="cs-fern cs-hide-on-mobile" src="/assets/images/leaves-pattern-8329654d.jpeg" alt="" width="220" height="340" loading="lazy" decoding="async">
+  <img class="cs-fern cs-hide-on-mobile" src="/assets/svgs/fern.svg" alt="" width="220" height="340" loading="lazy" decoding="async">
+</section>
+
+{# ── Testimonials ── #}
+<section id="testimonials-515">
+  <div class="cs-bg-leaves">
+    <img src="/assets/images/leaves-pattern-bg.webp" alt="" width="1920" height="600" loading="lazy" decoding="async">
+  </div>
+  <img class="cs-fern cs-hide-on-mobile" src="/assets/svgs/fern.svg" alt="" width="220" height="440" loading="lazy" decoding="async">
+  <div class="cs-container">
+    <div class="cs-header">
+      <div class="cs-content">
+        <span class="cs-topper">
+          <span class="cs-topper-dot"></span>
+          <img class="cs-topper-arrow" src="/assets/svgs/arrow-right.svg" alt="" width="40" height="8" loading="lazy" decoding="async">
+          Testimonials
+        </span>
+        <h2 class="cs-title">Let's Talk About Your Outdoor Vision</h2>
+      </div>
+      <div class="cs-controls">
+        <button class="cs-arrow cs-arrow-prev" aria-label="Previous review" disabled>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="cs-arrow cs-arrow-next" aria-label="Next review">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="cs-reviews-carousel">
+      <ul class="cs-card-group">
+        {%- for review in testimonials %}
+        <li class="cs-item">
+          <div class="cs-stars">
+            <img src="/assets/svgs/star-green.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+            <img src="/assets/svgs/star-green.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+            <img src="/assets/svgs/star-green.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+            <img src="/assets/svgs/star-green.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+            <img src="/assets/svgs/star-green.svg" alt="" width="18" height="18" loading="lazy" decoding="async">
+          </div>
+          <img class="cs-quote-icon" src="/assets/svgs/quote-green.svg" alt="" width="51" height="51" loading="lazy" decoding="async">
+          <blockquote class="cs-item-text">{{ review.text }}</blockquote>
+          <div class="cs-item-footer">
+            <div class="cs-author">
+              <span class="cs-name">{{ review.name }}</span>
+              <span class="cs-role">{{ review.date }}</span>
+            </div>
+            <a href="{{ review.googleUrl }}" class="cs-google-link" target="_blank" rel="noopener" aria-label="View on Google">
+              <img src="/assets/svgs/google-g.svg" alt="Google" width="30" height="30" loading="lazy" decoding="async">
+            </a>
+          </div>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{# ── FAQ ── #}
+<section id="faq-506">
+  <img class="cs-fern cs-hide-on-mobile" src="/assets/svgs/fern.svg" alt="" width="260" height="260" loading="lazy" decoding="async">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">
+        <span class="cs-topper-dot"></span>
+        <img class="cs-topper-arrow" src="/assets/svgs/arrow-right.svg" alt="" width="40" height="8" loading="lazy" decoding="async">
+        FAQ
+      </span>
+      <h2 class="cs-title">Frequently Asked Questions</h2>
+    </div>
+    <ul class="cs-faq-list">
+      {%- for item in faq %}
+      <li class="cs-faq-item">
+        <details class="cs-faq">
+          <summary class="cs-faq-summary">
+            <span class="cs-faq-question">{{ item.question }}</span>
+            <span class="cs-faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </summary>
+          <div class="cs-faq-body">
+            <p>{{ item.answer }}</p>
+          </div>
+        </details>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{# ── Service Areas ── #}
+<section id="service-areas-825">
+  <img class="cs-fern cs-hide-on-mobile" src="/assets/svgs/fern.svg" alt="" width="220" height="220" loading="lazy" decoding="async">
+  <div class="cs-container">
+    <div class="cs-info-card">
+      <div class="cs-info-head">
+        <span class="cs-topper">
+          <span class="cs-topper-dot"></span>
+          <img class="cs-topper-arrow" src="/assets/svgs/arrow-right.svg" alt="" width="48" height="8" loading="lazy" decoding="async">
+          Primary Service Areas
+        </span>
+        <h2 class="cs-title">Las Cruces Metro Area</h2>
+      </div>
+      <div class="cs-info-body">
+        <p class="cs-text">We proudly serve homeowners and commercial properties across the greater Las Cruces, NM region.</p>
+        <p class="cs-text">Transform your front yard, backyard, or commercial property with drought-tolerant landscaping, custom xeriscape design, and professional hardscaping built for the Las Cruces climate.</p>
+        <ul class="cs-locations">
+          <li><a href="/service-areas/las-cruces-nm/">Las Cruces</a></li>
+          <li><a href="/service-areas/mesilla-nm/">Mesilla</a></li>
+          <li><a href="/service-areas/dona-ana-nm/">Doña Ana</a></li>
+          <li><a href="/service-areas/organ-nm/">Organ</a></li>
+          <li><a href="/service-areas/anthony-nm/">Anthony</a></li>
+          <li><a href="/service-areas/sunland-park-nm/">Sunland Park</a></li>
+        </ul>
+      </div>
+      <div class="cs-info-picture">
+        <img src="/assets/images/brainards-xeriscaping-7-b2301eed.jpeg" alt="Brainard's Greenscapes desert landscape project in Las Cruces" width="800" height="130" loading="lazy" decoding="async">
+      </div>
+      <div class="cs-office">
+        <h3 class="cs-office-heading">Our Office Location</h3>
+        <a href="{{ site.googleMapsUrl }}" class="cs-office-address" target="_blank" rel="noopener">{{ site.address.full }}</a>
+        <span class="cs-office-underline"></span>
+        <a href="/service-areas/" class="cs-office-button">View All Service Areas</a>
+      </div>
+    </div>
+    <div class="cs-map">
+      <iframe src="{{ site.googleMapsEmbed }}" title="Map of Las Cruces, NM service area" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+{# ── CTA Banner ── #}
+<section id="lets-talk-318">
+  <div class="cs-container">
+    <h2 class="cs-title">Let's Talk About Your Landscape</h2>
+    <a href="/contact/" class="cs-talk-button">Contact Us</a>
+  </div>
+  <img class="cs-tree" src="/assets/svgs/talk-tree.svg" alt="" loading="lazy" decoding="async">
+  <img class="cs-bird cs-bird-1" src="/assets/svgs/talk-bird-1.svg" alt="" loading="lazy" decoding="async">
+  <img class="cs-bird cs-bird-2" src="/assets/svgs/talk-bird-2.svg" alt="" loading="lazy" decoding="async">
+  <img class="cs-bird cs-bird-3" src="/assets/svgs/talk-bird-3.svg" alt="" loading="lazy" decoding="async">
+  <img class="cs-grass" src="/assets/svgs/talk-grass-top.svg" alt="" loading="lazy" decoding="async">
 </section>
