@@ -1,11 +1,11 @@
 // Reviews carousel – horizontal scroll with arrow controls
 (function () {
-  const carousel = document.querySelector(".cs-reviews-carousel");
-  if (!carousel) return;
+  const section = document.getElementById("testimonials-515");
+  if (!section) return;
 
-  const track = carousel.querySelector(".cs-card-group");
-  const prev = carousel.querySelector(".cs-arrow-prev");
-  const next = carousel.querySelector(".cs-arrow-next");
+  const track = section.querySelector(".cs-card-group");
+  const prev = section.querySelector(".cs-arrow-prev");
+  const next = section.querySelector(".cs-arrow-next");
   if (!track) return;
 
   function getScrollAmount() {
