@@ -1,0 +1,15 @@
+<section id="banner-310">
+  <div class="cs-container">
+    <h1 class="cs-int-title">{{ bannerTitle }}</h1>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      {% if bannerParent %}
+      <a href="{{ bannerParentUrl }}" class="cs-link">{{ bannerParent }}</a>
+      {% endif %}
+      <span class="cs-link cs-active">{{ bannerCrumb or bannerTitle }}</span>
+    </div>
+  </div>
+  <div class="cs-background">
+    <img src="{{ bannerBg or '/assets/images/leaves-pattern-wide.webp' }}" alt="" width="1920" height="400" loading="eager" decoding="async">
+  </div>
+</section>

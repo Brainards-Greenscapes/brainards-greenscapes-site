@@ -24,6 +24,11 @@
   <link rel="stylesheet" href="/assets/css/root.css">
   <link rel="stylesheet" href="/assets/css/critical.css">
   <link rel="stylesheet" href="/assets/css/local.css">
+  {% if pageCSS %}
+    {% for css in pageCSS %}
+  <link rel="stylesheet" href="/assets/css/{{ css }}">
+    {% endfor %}
+  {% endif %}
 
   <!-- Preload fonts -->
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
@@ -42,7 +47,10 @@
   {% include "partials/footer.njk" %}
 
   <script src="/assets/js/nav.js" defer></script>
-  <script src="/assets/js/compare.js" defer></script>
-  <script src="/assets/js/reviews.js" defer></script>
+  {% if pageJS %}
+    {% for js in pageJS %}
+  <script src="/assets/js/{{ js }}" defer></script>
+    {% endfor %}
+  {% endif %}
 </body>
 </html>

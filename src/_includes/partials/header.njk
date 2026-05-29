@@ -1,60 +1,62 @@
 <header id="cs-navigation">
-  <!-- Top Bar (desktop only) -->
   <div class="cs-top-bar">
     <div class="cs-top-container">
-      <ul class="cs-social-list">
+      <ul class="cs-social-list" aria-label="social media links">
         <li class="cs-social-item">
-          <a href="{{ site.social.facebook }}" class="cs-social-link" target="_blank" rel="noopener" aria-label="Facebook">
-            <img src="/assets/svgs/facebook.svg" alt="" width="14" height="14" loading="lazy" decoding="async">
+          <a href="{{ site.social.facebook }}" class="cs-social-link" aria-label="Visit us on Facebook" rel="noopener noreferrer" target="_blank">
+            <img src="/assets/svgs/facebook.svg" alt="" width="16" height="16" aria-hidden="true" loading="eager" decoding="async">
           </a>
         </li>
         <li class="cs-social-item">
-          <a href="{{ site.social.instagram }}" class="cs-social-link" target="_blank" rel="noopener" aria-label="Instagram">
-            <img src="/assets/svgs/instagram.svg" alt="" width="14" height="14" loading="lazy" decoding="async">
+          <a href="{{ site.social.instagram }}" class="cs-social-link" aria-label="Visit us on Instagram" rel="noopener noreferrer" target="_blank">
+            <img src="/assets/svgs/instagram.svg" alt="" width="16" height="16" aria-hidden="true" loading="eager" decoding="async">
           </a>
         </li>
         <li class="cs-social-item">
-          <a href="{{ site.social.linkedin }}" class="cs-social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <img src="/assets/svgs/linkedin.svg" alt="" width="14" height="14" loading="lazy" decoding="async">
+          <a href="{{ site.social.linkedin }}" class="cs-social-link" aria-label="Visit us on LinkedIn" rel="noopener noreferrer" target="_blank">
+            <img src="/assets/svgs/linkedin.svg" alt="" width="16" height="16" aria-hidden="true" loading="eager" decoding="async">
           </a>
         </li>
       </ul>
-      <ul class="cs-info-list">
+      <ul class="cs-info-list" aria-label="location and hours">
         <li class="cs-info-item">
-          <img class="cs-info-icon" src="/assets/svgs/map-pin.svg" alt="" width="16" height="16" loading="lazy" decoding="async">
+          <img src="/assets/svgs/map-pin.svg" alt="" width="16" height="16" aria-hidden="true" class="cs-info-icon" loading="eager" decoding="async">
           <span class="cs-info-text">{{ site.address.full }}</span>
         </li>
         <li class="cs-info-item">
-          <img class="cs-info-icon" src="/assets/svgs/clock.svg" alt="" width="16" height="16" loading="lazy" decoding="async">
+          <img src="/assets/svgs/clock.svg" alt="" width="16" height="16" aria-hidden="true" class="cs-info-icon" loading="eager" decoding="async">
           <span class="cs-info-text">{{ site.hours }}</span>
         </li>
       </ul>
     </div>
   </div>
 
-  <!-- Main Navigation -->
   <div class="cs-container">
-    <!-- Mobile Toggle -->
-    <nav class="cs-nav">
-      <button class="cs-toggle" aria-label="mobile menu toggle" aria-expanded="false">
-        <div class="cs-box">
-          <span class="cs-line cs-line1"></span>
-          <span class="cs-line cs-line2"></span>
-          <span class="cs-line cs-line3"></span>
-        </div>
+    <a href="/" class="cs-logo" aria-label="{{ site.name }} home page">
+      <img src="/assets/images/logo-circle-nav.webp" alt="{{ site.name }}" width="320" height="320" loading="eager" decoding="async">
+    </a>
+
+    <nav aria-label="main navigation" class="cs-nav">
+      <button class="cs-toggle" aria-label="mobile menu toggle" aria-controls="cs-ul-wrapper" aria-expanded="false" aria-haspopup="menu" id="cs-toggle">
+        <span class="cs-box" aria-hidden="true">
+          <span class="cs-line cs-line1" aria-hidden="true"></span>
+          <span class="cs-line cs-line2" aria-hidden="true"></span>
+          <span class="cs-line cs-line3" aria-hidden="true"></span>
+        </span>
       </button>
 
-      <div class="cs-ul-wrapper">
-        <ul class="cs-ul">
+      <div class="cs-ul-wrapper" id="cs-ul-wrapper">
+        <ul class="cs-ul" id="cs-expanded">
           <li class="cs-li">
-            <a href="/about/" class="cs-li-link{% if page.url == '/about/' %} cs-active{% endif %}">About</a>
+            <a href="/about/" class="cs-li-link">About</a>
           </li>
+
           <li class="cs-li cs-dropdown">
-            <button class="cs-li-link cs-dropdown-toggle{% if '/services/' in page.url %} cs-active{% endif %}">
-              Services
-              <span class="cs-drop-icon"></span>
+            <button class="cs-li-link cs-dropdown-toggle" aria-expanded="false" aria-haspopup="menu">
+              <span class="cs-drop-text">Services</span>
+              <span class="cs-drop-icon" aria-hidden="true"></span>
             </button>
-            <div class="cs-mega-menu">
+            <div class="cs-drop-ul cs-mega-menu" role="menu">
               <div class="cs-mega-grid">
                 <div class="cs-mega-col">
                   <a href="/services/landscaping/" class="cs-mega-heading">Landscaping</a>
@@ -95,31 +97,29 @@
               </div>
             </div>
           </li>
+
           <li class="cs-li">
-            <a href="/portfolio/" class="cs-li-link{% if page.url == '/portfolio/' %} cs-active{% endif %}">Portfolio</a>
+            <a href="/portfolio/" class="cs-li-link">Portfolio</a>
           </li>
           <li class="cs-li">
-            <a href="/service-areas/" class="cs-li-link{% if '/service-areas/' in page.url %} cs-active{% endif %}">Service Areas</a>
+            <a href="/service-areas/" class="cs-li-link">Service Areas</a>
+          </li>
+          <li class="cs-li">
+            <a href="/contact/" class="cs-li-link">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <!-- Logo -->
-    <a class="cs-logo" href="/" aria-label="{{ site.name }} home">
-      <img src="/assets/images/logo-circle-nav.webp" alt="{{ site.name }}" width="160" height="160" loading="eager" decoding="async">
-    </a>
-
-    <!-- Phone CTA -->
     <div class="cs-call-group">
-      <a href="tel:{{ site.phoneRaw }}" class="cs-phone-icon" aria-label="Call {{ site.phone }}">
-        <img src="/assets/svgs/phone.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+      <a href="tel:{{ site.phoneRaw | replace('-', '') }}" class="cs-phone-icon" aria-label="Call us at {{ site.phone }}">
+        <img src="/assets/svgs/phone.svg" alt="" width="18" height="18" aria-hidden="true" loading="eager" decoding="async">
       </a>
       <div class="cs-call-info">
         <span class="cs-call-label">Call Us Today</span>
-        <a href="tel:{{ site.phoneRaw }}" class="cs-call-number">{{ site.phone }}</a>
+        <a href="tel:{{ site.phoneRaw | replace('-', '') }}" class="cs-call-number">{{ site.phone }}</a>
       </div>
-      <a href="/contact/" class="cs-button-solid cs-nav-button">Schedule an Estimate</a>
     </div>
+    <a href="/contact/" class="cs-button-solid cs-nav-button">Schedule an Estimate</a>
   </div>
 </header>
