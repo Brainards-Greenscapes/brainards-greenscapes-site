@@ -23,7 +23,7 @@ export default function (eleventyConfig) {
     }
 
     const imgMeta = await Image(src, {
-      widths: [600, 1024, 1920],
+      widths: [400, 600, 1024, 1920],
       formats: ["webp", "jpeg"],
       outputDir: "./_site/assets/images/",
       urlPath: "/assets/images/",
@@ -40,13 +40,16 @@ export default function (eleventyConfig) {
     // Build <source> elements for webp at each breakpoint
     const sources = [];
     if (webp[0]) {
-      sources.push(`<source media="(max-width: 600px)" srcset="${webp[0].url}" type="image/webp">`);
+      sources.push(`<source media="(max-width: 400px)" srcset="${webp[0].url}" type="image/webp">`);
     }
     if (webp[1]) {
-      sources.push(`<source media="(max-width: 1024px)" srcset="${webp[1].url}" type="image/webp">`);
+      sources.push(`<source media="(max-width: 600px)" srcset="${webp[1].url}" type="image/webp">`);
     }
     if (webp[2]) {
-      sources.push(`<source media="(min-width: 1024px)" srcset="${webp[2].url}" type="image/webp">`);
+      sources.push(`<source media="(max-width: 1024px)" srcset="${webp[2].url}" type="image/webp">`);
+    }
+    if (webp[3]) {
+      sources.push(`<source media="(min-width: 1024px)" srcset="${webp[3].url}" type="image/webp">`);
     }
 
     const loadAttr = loading === "eager" ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
