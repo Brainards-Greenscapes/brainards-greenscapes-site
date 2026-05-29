@@ -1,13 +1,64 @@
 ---
 layout: layouts/base.njk
 title: "Xeriscaping in Las Cruces, NM | Brainard's Greenscapes"
-description: ""
-pageCSS: ["services.css"]
-pageJS: ["reviews-carousel.js"]
+description: "IE=edge"
+pageJS: ['reviews-carousel.js']
+pageCSS: ['services.css']
 ---
-
-<section id="services-hero-532">
-            {% image "src/assets/images/brainards-xeriscaping-36.jpeg", "", "eager" %}
+<nav aria-label="Breadcrumb" class="cs-breadcrumbs">
+            <div class="cs-breadcrumbs-container">
+                <ol class="cs-breadcrumb-list">
+                    <li class="cs-breadcrumb-item">
+                        <a href="/" class="cs-breadcrumb-link">Home</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <a href="/services/" class="cs-breadcrumb-link">Services</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <a href="/services/landscaping/" class="cs-breadcrumb-link">Landscaping</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <span class="cs-breadcrumb-current" aria-current="page">Xeriscaping</span>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <script type="application/ld+json">{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.brainardsgreenscapes.com/"
+                },{
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://www.brainardsgreenscapes.com/services/"
+                },{
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Landscaping",
+                    "item": "https://www.brainardsgreenscapes.com/services/landscaping/"
+                },{
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Xeriscaping",
+                    "item": "https://www.brainardsgreenscapes.com/services/landscaping/xeriscaping/"
+                }]
+        }</script>
+        <section id="services-hero-532">
+            <picture class="cs-bg-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/brainards-xeriscaping-36-63aff08a.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-36-8ef017dd.webp" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-36-1d474296.webp" type="image/webp">
+                <img alt="" decoding="async" src="/assets/images/brainards-xeriscaping-36-79b1bbd5.jpeg" height="775" width="1920" fetchpriority="high">
+            </picture>
             <div class="cs-container">
                 <div class="cs-card">
                     <div class="cs-heading-group">
@@ -37,7 +88,12 @@ pageJS: ["reviews-carousel.js"]
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern cs-fern-left">
             <div class="cs-container">
                 <div class="cs-row">
-                    {% image "src/assets/images/brainards-xeriscaping-26.jpeg", "Native and drought-tolerant xeriscape installation by Brainard's Greenscapes in Las Cruces" %}
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/brainards-xeriscaping-26-2ec19306.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-26-feb63483.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-26-06deecd8.webp" type="image/webp">
+                        <img alt="Native and drought-tolerant xeriscape installation by Brainard's Greenscapes in Las Cruces" decoding="async" src="/assets/images/brainards-xeriscaping-26-4ccdd838.jpeg" height="636" width="480" loading="lazy">
+                    </picture>
                     <div class="cs-content">
                         <span class="cs-topper">
                             <span class="cs-topper-dot" aria-hidden="true"></span>
@@ -195,7 +251,12 @@ pageJS: ["reviews-carousel.js"]
                         </li>
                     </ul>
                 </div>
-                {% image "src/assets/images/brainards-xeriscaping-14.jpeg", "Mature xeriscape conversion with native plants and drip irrigation by Brainard's Greenscapes in Las Cruces" %}
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/brainards-xeriscaping-14-1559a0d9.webp" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-14-eda96a9b.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-14-ef15bf62.webp" type="image/webp">
+                    <img alt="Mature xeriscape conversion with native plants and drip irrigation by Brainard's Greenscapes in Las Cruces" decoding="async" src="/assets/images/brainards-xeriscaping-14-94dd1c0d.jpeg" height="996" width="616" loading="lazy">
+                </picture>
             </div>
         </section>
         <section id="services-region-450">
@@ -237,11 +298,21 @@ pageJS: ["reviews-carousel.js"]
                     </p>
                     <a href="/contact/" class="cs-button-solid cs-nav-button">Build Your Plant List</a>
                 </div>
-                {% image "src/assets/images/brainards-xeriscaping-40.jpeg", "Native Chihuahuan Desert xeriscape with drought-tolerant plants by Brainard's Greenscapes in Las Cruces, NM" %}
+                <picture class="cs-region-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/brainards-xeriscaping-40-ce49106c.webp" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-40-c3ce90c8.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-40-e07a52df.webp" type="image/webp">
+                    <img alt="Native Chihuahuan Desert xeriscape with drought-tolerant plants by Brainard's Greenscapes in Las Cruces, NM" decoding="async" src="/assets/images/brainards-xeriscaping-40-060cdd35.jpeg" height="804" width="440" loading="lazy">
+                </picture>
             </div>
         </section>
         <section id="services-why-353">
-            {% image "src/assets/images/leaves-pattern.jpeg", "" %}
+            <picture class="cs-bg-leaves">
+                <source media="(max-width: 600px)" srcset="/assets/images/leaves-pattern-a468006e.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/assets/images/leaves-pattern-eb7cf403.webp" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="/assets/images/leaves-pattern-a9ac1796.webp" type="image/webp">
+                <img alt="" decoding="async" src="/assets/images/leaves-pattern-0ac785f1.jpeg" height="1840" width="1920" loading="lazy">
+            </picture>
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern">
             <div class="cs-container">
                 <div class="cs-header">
@@ -254,8 +325,18 @@ pageJS: ["reviews-carousel.js"]
                     <p class="cs-intro">A xeriscape is only as good as the soil prep, the plant palette, and the drip system underneath it. Local experience, in-house design and build, ordinance-aware planning, and a workmanship guarantee. Every xeriscape we install is built to last and built to comply.</p>
                 </div>
                 <div class="cs-gallery" aria-hidden="true">
-                    {% image "src/assets/images/brainards-xeriscaping-56.jpeg", "" %}
-                    {% image "src/assets/images/brainards-xeriscaping-53.jpeg", "" %}
+                    <picture class="cs-picture cs-picture-1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/brainards-xeriscaping-56-846a69c0.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-56-0010d1ec.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-56-0010d1ec.webp" type="image/webp">
+                        <img alt="" decoding="async" src="/assets/images/brainards-xeriscaping-56-d72b7aea.jpeg" height="594" width="460" loading="lazy">
+                    </picture>
+                    <picture class="cs-picture cs-picture-2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/brainards-xeriscaping-53-7b25d1f5.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-53-76fc949c.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-53-76fc949c.webp" type="image/webp">
+                        <img alt="" decoding="async" src="/assets/images/brainards-xeriscaping-53-9f89fc19.jpeg" height="439" width="330" loading="lazy">
+                    </picture>
                 </div>
                 <ul class="cs-feature-list">
                     <li class="cs-feature">
@@ -326,7 +407,12 @@ pageJS: ["reviews-carousel.js"]
                     </a>
                 </article>
                 <article class="cs-diff-card">
-                    {% image "src/assets/images/leaves-pattern.jpeg", "" %}
+                    <picture class="cs-diff-bg">
+                        <source media="(max-width: 600px)" srcset="/assets/images/leaves-pattern-247ea865.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/leaves-pattern-2c9c5684.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/leaves-pattern-b0152af4.webp" type="image/webp">
+                        <img alt="" decoding="async" src="/assets/images/leaves-pattern-c56eac00.jpeg" height="605" width="572" loading="lazy">
+                    </picture>
                     <h2 class="cs-diff-title">The Brainard’s Difference</h2>
                     <ul class="cs-diff-list">
                         <li class="cs-diff-item">
@@ -458,7 +544,12 @@ pageJS: ["reviews-carousel.js"]
                             </li>
                         </ul>
                     </div>
-                    {% image "src/assets/images/brainards-xeriscaping-30.webp", "Brainard's Greenscapes xeriscape installation in Las Cruces" %}
+                    <picture class="cs-info-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/brainards-xeriscaping-30-cfc40d2b.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-30-a1ba48a0.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-30-a1ba48a0.webp" type="image/webp">
+                        <img alt="Brainard's Greenscapes xeriscape installation in Las Cruces" decoding="async" src="/assets/images/brainards-xeriscaping-30-45a1cc7b.jpeg" height="130" width="428" loading="lazy">
+                    </picture>
                     <div class="cs-office">
                         <h3 class="cs-office-heading">Our Office Location</h3>
                         <a href="https://www.google.com/maps/place/Brainard's+Greenscapes/data=!4m2!3m1!1s0x0:0x3c69d063ef4f24?sa=X&ved=1t:2428&ictx=111" class="cs-office-address" rel="noopener" target="_blank">Las Cruces, NM </a>
@@ -472,7 +563,12 @@ pageJS: ["reviews-carousel.js"]
             </div>
         </section>
         <section id="testimonials-515" class="cs-reviews-carousel">
-            {% image "src/assets/images/leaves-pattern.jpeg", "" %}
+            <picture class="cs-bg-leaves">
+                <source media="(max-width: 600px)" srcset="/assets/images/leaves-pattern-5f48081d.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/assets/images/leaves-pattern-edeab06b.webp" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="/assets/images/leaves-pattern-03e85c27.webp" type="image/webp">
+                <img alt="" decoding="async" src="/assets/images/leaves-pattern-8329654d.jpeg" height="1072" width="1920" loading="lazy">
+            </picture>
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern">
             <div class="cs-container">
                 <div class="cs-header">

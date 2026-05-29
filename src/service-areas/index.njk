@@ -1,14 +1,42 @@
 ---
 layout: layouts/base.njk
-title: "Service Areas | Brainard's Greenscapes"
-description: "Brainard's Greenscapes serves Las Cruces, Mesilla, Doña Ana, Sonoma Ranch, Picacho Hills, East Mesa, Anthony, and Sunland Park with expert landscaping."
-pageCSS: ["services.css", "service-areas.css"]
-pageJS: ["reviews-carousel.js"]
+title: "Landscaping Service Areas | Las Cruces, NM | Brainard's"
+description: "IE=edge"
+pageCSS: ['services.css', 'service-areas.css']
 ---
 
-<section id="services-hero-532">
+<nav aria-label="Breadcrumb" class="cs-breadcrumbs">
+            <div class="cs-breadcrumbs-container">
+                <ol class="cs-breadcrumb-list">
+                    <li class="cs-breadcrumb-item">
+                        <a class="cs-breadcrumb-link" href="/">Home</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <span class="cs-breadcrumb-current" aria-current="page">Service Areas</span>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <script type="application/ld+json">{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.brainardsgreenscapes.com/"
+                },{
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Service Areas",
+                    "item": "https://www.brainardsgreenscapes.com/service-areas/"
+                }]
+        }</script>
+        <section id="services-hero-532">
             <picture aria-hidden="true" class="cs-bg-picture">
-                {% image "src/assets/images/brainards-xeriscaping-2.webp", "", "eager" %}
+                <img alt="" decoding="async" src="/assets/images/brainards-xeriscaping-2.webp" height="800" width="1920" loading="eager">
             </picture>
             <div class="cs-container">
                 <div class="cs-card">
@@ -34,8 +62,7 @@ pageJS: ["reviews-carousel.js"]
                 </div>
             </div>
         </section>
-
-<section id="areas-hub-intro-650">
+        <section id="areas-hub-intro-650">
             <div class="cs-container">
                 <div class="cs-row">
                     <div class="cs-content">
@@ -55,8 +82,7 @@ pageJS: ["reviews-carousel.js"]
                 </div>
             </div>
         </section>
-
-<section id="areas-hub-cities-670">
+        <section id="areas-hub-cities-670">
             <div class="cs-container">
                 <div class="cs-header">
                     <span class="cs-topper">
@@ -225,8 +251,7 @@ pageJS: ["reviews-carousel.js"]
                 </div>
             </div>
         </section>
-
-<section id="areas-stats-640">
+        <section id="areas-stats-640">
             <div class="cs-container">
                 <div class="cs-header">
                     <div class="cs-heading-col">
@@ -262,8 +287,7 @@ pageJS: ["reviews-carousel.js"]
                 </ul>
             </div>
         </section>
-
-<section id="lets-talk-318">
+        <section id="lets-talk-318">
             <img alt="" decoding="async" src="/assets/svgs/talk-tree.svg" height="457" width="427" aria-hidden="true" class="cs-tree">
             <img alt="" decoding="async" src="/assets/svgs/talk-bird-1.svg" height="20" width="64" aria-hidden="true" class="cs-bird cs-bird-1">
             <img alt="" decoding="async" src="/assets/svgs/talk-bird-2.svg" height="15" width="56" aria-hidden="true" class="cs-bird cs-bird-2">

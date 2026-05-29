@@ -1,13 +1,54 @@
 ---
 layout: layouts/base.njk
 title: "Irrigation Installation in Las Cruces, NM | Brainard's"
-description: ""
-pageCSS: ["services.css"]
-pageJS: ["reviews-carousel.js"]
+description: "IE=edge"
+pageCSS: ['services.css']
 ---
-
-<section id="services-hero-532">
-            {% image "src/assets/images/brainards-sod-2.jpeg", "", "eager" %}
+<nav aria-label="Breadcrumb" class="cs-breadcrumbs">
+            <div class="cs-breadcrumbs-container">
+                <ol class="cs-breadcrumb-list">
+                    <li class="cs-breadcrumb-item">
+                        <a href="/" class="cs-breadcrumb-link">Home</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <a href="/services/" class="cs-breadcrumb-link">Services</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <span class="cs-breadcrumb-current" aria-current="page">Irrigation</span>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <script type="application/ld+json">{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.brainardsgreenscapes.com/"
+                },{
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://www.brainardsgreenscapes.com/services/"
+                },{
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Irrigation",
+                    "item": "https://www.brainardsgreenscapes.com/services/irrigation/"
+                }]
+        }</script>
+        <section id="services-hero-532">
+            <picture class="cs-bg-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/brainards-sod-2-2897ebba.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/assets/images/brainards-sod-2-bf08597c.webp" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="/assets/images/brainards-sod-2-d1bbadd6.webp" type="image/webp">
+                <img alt="" decoding="async" src="/assets/images/brainards-sod-2-6c399085.jpeg" height="775" width="1920" fetchpriority="high">
+            </picture>
             <div class="cs-container">
                 <div class="cs-card">
                     <div class="cs-heading-group">
@@ -37,7 +78,12 @@ pageJS: ["reviews-carousel.js"]
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern cs-fern-left">
             <div class="cs-container">
                 <div class="cs-row">
-                    {% image "src/assets/images/brainards-drip-irrigation.jpeg", "Sprinkler and drip irrigation installation by Brainard's Greenscapes in Las Cruces, NM" %}
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/brainards-drip-irrigation-862be10f.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/brainards-drip-irrigation-c380b0c7.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/brainards-drip-irrigation-beba8131.webp" type="image/webp">
+                        <img alt="Sprinkler and drip irrigation installation by Brainard's Greenscapes in Las Cruces, NM" decoding="async" src="/assets/images/brainards-drip-irrigation-1f8c9a5a.jpeg" height="628" width="480" loading="lazy">
+                    </picture>
                     <div class="cs-content">
                         <span class="cs-topper">
                             <span class="cs-topper-dot" aria-hidden="true"></span>
@@ -213,7 +259,12 @@ pageJS: ["reviews-carousel.js"]
                         </li>
                     </ul>
                 </div>
-                {% image "src/assets/images/brainards-xeriscaping-19.jpeg", "Brainard's Greenscapes drip-irrigated landscape in Las Cruces" %}
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/brainards-xeriscaping-19-2f9c0c63.webp" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-19-06d359bc.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-19-881792ac.webp" type="image/webp">
+                    <img alt="Brainard's Greenscapes drip-irrigated landscape in Las Cruces" decoding="async" src="/assets/images/brainards-xeriscaping-19-76a7c6da.jpeg" height="844" width="616" loading="lazy">
+                </picture>
             </div>
         </section>
         <section id="services-pricing-219">
@@ -240,7 +291,12 @@ pageJS: ["reviews-carousel.js"]
                     </a>
                 </article>
                 <article class="cs-diff-card">
-                    {% image "src/assets/images/leaves-pattern.jpeg", "" %}
+                    <picture class="cs-diff-bg">
+                        <source media="(max-width: 600px)" srcset="/assets/images/leaves-pattern-8812834c.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/leaves-pattern-d745368f.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/leaves-pattern-f62d6d5e.webp" type="image/webp">
+                        <img alt="" decoding="async" src="/assets/images/leaves-pattern-200d3afb.jpeg" height="581" width="572" loading="lazy">
+                    </picture>
                     <h2 class="cs-diff-title">The Brainard’s Difference</h2>
                     <ul class="cs-diff-list">
                         <li class="cs-diff-item">

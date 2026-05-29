@@ -1,12 +1,39 @@
 ---
 layout: layouts/base.njk
 title: "Contact Brainard's Greenscapes | Landscaping Las Cruces, NM"
-description: ""
-pageCSS: ["contact.css"]
-pageJS: []
+description: "IE=edge"
+pageCSS: ['contact.css']
 ---
-
-<section id="contact-hero-66">
+<nav aria-label="Breadcrumb" class="cs-breadcrumbs">
+            <div class="cs-breadcrumbs-container">
+                <ol class="cs-breadcrumb-list">
+                    <li class="cs-breadcrumb-item">
+                        <a class="cs-breadcrumb-link" href="/">Home</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <span class="cs-breadcrumb-current" aria-current="page">Contact</span>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <script type="application/ld+json">{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.brainardsgreenscapes.com/"
+                },{
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Contact",
+                    "item": "https://www.brainardsgreenscapes.com/contact/"
+                }]
+        }</script>
+        <section id="contact-hero-66">
             <img alt="" decoding="async" src="/assets/svgs/talk-tree.svg" height="457" width="427" aria-hidden="true" class="cs-tree">
             <div class="cs-container">
                 <div class="cs-content">
@@ -35,7 +62,9 @@ pageJS: []
                 </div>
                 <div class="cs-layout">
                     <aside class="cs-info-card">
-                        {% image "src/assets/images/brainards-pavers-1.webp", "Paver walkway with stone retaining wall by Brainard's Greenscapes" %}
+                        <picture class="cs-info-picture">
+                            <img alt="Paver walkway with stone retaining wall by Brainard's Greenscapes" decoding="async" src="/assets/images/brainards-pavers-1.webp" height="856" width="505" loading="lazy">
+                        </picture>
                         <div class="cs-info-body">
                             <h3 class="cs-info-heading">Contact</h3>
                             <ul class="cs-info-list">
@@ -187,7 +216,9 @@ pageJS: []
                             </li>
                         </ul>
                     </div>
-                    {% image "src/assets/images/brainards-xeriscaping-1.webp", "Xeriscape front yard with desert plantings in Las Cruces, NM" %}
+                    <picture class="cs-card-photo">
+                        <img alt="Xeriscape front yard with desert plantings in Las Cruces, NM" decoding="async" src="/assets/images/brainards-xeriscaping-1.webp" height="120" width="378" loading="lazy">
+                    </picture>
                     <div class="cs-card-bottom">
                         <div class="cs-office">
                             <h3 class="cs-office-heading">Our Office Location</h3>

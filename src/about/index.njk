@@ -1,32 +1,63 @@
 ---
 layout: layouts/base.njk
-title: "About Brainard's Greenscapes | Las Cruces Landscaping"
-description: "Meet David Brainard and the team behind Las Cruces' top-rated landscaping company. 19+ years of drought-tolerant design, hardscaping, and irrigation expertise."
-pageCSS: ["about.css"]
-pageJS: ["reviews-carousel.js", "about-timeline.js"]
+title: "About Brainard's Greenscapes | Las Cruces, NM Landscapers"
+description: "IE=edge"
+pageJS: ['about-timeline.js', 'reviews-carousel.js']
+pageCSS: ['about.css']
 ---
-
-<section id="about-hero-101">
-  {% image "src/assets/images/leaves-pattern-wide.webp", "", "eager", "cs-bg" %}
-  <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern cs-fern-left">
-  <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern cs-fern-right">
-  <div class="cs-container">
-    <span class="cs-topper">
-      <span class="cs-topper-dot" aria-hidden="true"></span>
-      <img alt="" decoding="async" src="/assets/svgs/arrow-right.svg" height="10" width="48" aria-hidden="true" class="cs-topper-arrow">
-      No. 1 Landscaping Company.
-    </span>
-    <h1 class="cs-title">About Brainard's Greenscapes</h1>
-    <p class="cs-text">Transform your front yard, backyard, or commercial property with drought-tolerant landscaping, custom xeriscape design, and professional hardscaping built for the Las Cruces climate.</p>
-  </div>
-</section>
-
-<section id="about-vision-102">
+<nav aria-label="Breadcrumb" class="cs-breadcrumbs">
+            <div class="cs-breadcrumbs-container">
+                <ol class="cs-breadcrumb-list">
+                    <li class="cs-breadcrumb-item">
+                        <a href="/" class="cs-breadcrumb-link">Home</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <span class="cs-breadcrumb-current" aria-current="page">About</span>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <script type="application/ld+json">{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.brainardsgreenscapes.com/"
+                },{
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "About",
+                    "item": "https://www.brainardsgreenscapes.com/about/"
+                }]
+        }</script>
+        <section id="about-hero-101">
+            <picture class="cs-bg" aria-hidden="true">
+                <img alt="" decoding="async" src="/assets/images/leaves-pattern-wide.webp" height="540" width="1920" loading="eager">
+            </picture>
+            <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern cs-fern-left">
+            <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern cs-fern-right">
+            <div class="cs-container">
+                <span class="cs-topper">
+                    <span class="cs-topper-dot" aria-hidden="true"></span>
+                    <img alt="" decoding="async" src="/assets/svgs/arrow-right.svg" height="10" width="48" aria-hidden="true" class="cs-topper-arrow">
+                     No. 1 Landscaping Company.
+                </span>
+                <h1 class="cs-title">About Brainard's Greenscapes</h1>
+                <p class="cs-text">Transform your front yard, backyard, or commercial property with drought-tolerant landscaping, custom xeriscape design, and professional hardscaping built for the Las Cruces climate.</p>
+            </div>
+        </section>
+        <section id="about-vision-102">
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern cs-fern-left">
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern cs-fern-right">
             <div class="cs-container">
                 <div class="cs-row">
-                    {% image "src/assets/images/brainards-landscape-maintenance-4.webp", "Front-yard xeriscape with curved gravel beds and shade tree at a Las Cruces home", "", "cs-picture" %}
+                    <picture class="cs-picture">
+                        <img alt="Front-yard xeriscape with curved gravel beds and shade tree at a Las Cruces home" decoding="async" src="/assets/images/brainards-landscape-maintenance-4.webp" height="540" width="548" loading="lazy">
+                    </picture>
                     <div class="cs-content">
                         <span class="cs-topper">
                             <span class="cs-topper-dot" aria-hidden="true"></span>
@@ -109,8 +140,7 @@ pageJS: ["reviews-carousel.js", "about-timeline.js"]
                 </ul>
             </div>
         </section>
-
-<section id="about-timeline-103">
+        <section id="about-timeline-103">
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern">
             <div class="cs-container">
                 <div class="cs-header">
@@ -165,9 +195,13 @@ pageJS: ["reviews-carousel.js", "about-timeline.js"]
                 </ol>
             </div>
         </section>
-
-<section id="testimonials-515" class="cs-reviews-carousel">
-            {% image "src/assets/images/leaves-pattern.jpeg", "", "", "cs-bg-leaves" %}
+        <section id="testimonials-515" class="cs-reviews-carousel">
+            <picture class="cs-bg-leaves">
+                <source media="(max-width: 600px)" srcset="/assets/images/leaves-pattern-5f48081d.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/assets/images/leaves-pattern-edeab06b.webp" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="/assets/images/leaves-pattern-03e85c27.webp" type="image/webp">
+                <img alt="" decoding="async" src="/assets/images/leaves-pattern-8329654d.jpeg" height="1072" width="1920" loading="lazy">
+            </picture>
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern">
             <div class="cs-container">
                 <div class="cs-header">
@@ -296,8 +330,7 @@ pageJS: ["reviews-carousel.js", "about-timeline.js"]
                 </ul>
             </div>
         </section>
-
-<section id="lets-talk-318">
+        <section id="lets-talk-318">
             <img alt="" decoding="async" src="/assets/svgs/talk-tree.svg" height="457" width="427" aria-hidden="true" class="cs-tree">
             <img alt="" decoding="async" src="/assets/svgs/talk-bird-1.svg" height="20" width="64" aria-hidden="true" class="cs-bird cs-bird-1">
             <img alt="" decoding="async" src="/assets/svgs/talk-bird-2.svg" height="15" width="56" aria-hidden="true" class="cs-bird cs-bird-2">

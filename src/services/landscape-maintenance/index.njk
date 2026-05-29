@@ -1,13 +1,55 @@
 ---
 layout: layouts/base.njk
 title: "Landscape Maintenance in Las Cruces, NM | Brainard's"
-description: ""
-pageCSS: ["services.css"]
-pageJS: ["reviews-carousel.js"]
+description: "IE=edge"
+pageJS: ['reviews-carousel.js']
+pageCSS: ['services.css']
 ---
-
-<section id="services-hero-532">
-            {% image "src/assets/images/brainards-landscape-maintenance-1.jpeg", "", "eager" %}
+<nav aria-label="Breadcrumb" class="cs-breadcrumbs">
+            <div class="cs-breadcrumbs-container">
+                <ol class="cs-breadcrumb-list">
+                    <li class="cs-breadcrumb-item">
+                        <a href="/" class="cs-breadcrumb-link">Home</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <a href="/services/" class="cs-breadcrumb-link">Services</a>
+                    </li>
+                    <li class="cs-breadcrumb-item">
+                        <span class="cs-breadcrumb-sep" aria-hidden="true">›</span>
+                        <span class="cs-breadcrumb-current" aria-current="page">Landscape Maintenance</span>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <script type="application/ld+json">{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.brainardsgreenscapes.com/"
+                },{
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://www.brainardsgreenscapes.com/services/"
+                },{
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Landscape Maintenance",
+                    "item": "https://www.brainardsgreenscapes.com/services/landscape-maintenance/"
+                }]
+        }</script>
+        <section id="services-hero-532">
+            <picture class="cs-bg-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/brainards-landscape-maintenance-1-471ef402.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/assets/images/brainards-landscape-maintenance-1-89a329ec.webp" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="/assets/images/brainards-landscape-maintenance-1-f15c2bf3.webp" type="image/webp">
+                <img alt="" decoding="async" src="/assets/images/brainards-landscape-maintenance-1-564d126b.jpeg" height="775" width="1920" fetchpriority="high">
+            </picture>
             <div class="cs-container">
                 <div class="cs-card">
                     <div class="cs-heading-group">
@@ -187,7 +229,12 @@ pageJS: ["reviews-carousel.js"]
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern cs-fern-left">
             <div class="cs-container">
                 <div class="cs-row">
-                    {% image "src/assets/images/brainards-landscape-maintenance-2.webp", "Landscape maintenance crew working on a Las Cruces property by Brainard's Greenscapes" %}
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/brainards-landscape-maintenance-2-622d2b3c.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/brainards-landscape-maintenance-2-14b1ad72.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/brainards-landscape-maintenance-2-2c75132d.webp" type="image/webp">
+                        <img alt="Landscape maintenance crew working on a Las Cruces property by Brainard's Greenscapes" decoding="async" src="/assets/images/brainards-landscape-maintenance-2-55054f86.jpeg" height="916" width="480" loading="lazy">
+                    </picture>
                     <div class="cs-content">
                         <span class="cs-topper">
                             <span class="cs-topper-dot" aria-hidden="true"></span>
@@ -388,11 +435,21 @@ pageJS: ["reviews-carousel.js"]
                         </li>
                     </ul>
                 </div>
-                {% image "src/assets/images/brainards-landscape-maintenance-3.jpeg", "Brainard's Greenscapes landscape maintenance crew servicing a yard in Las Cruces" %}
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/brainards-landscape-maintenance-3-9e3f7ef5.webp" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="/assets/images/brainards-landscape-maintenance-3-bb857ff6.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="/assets/images/brainards-landscape-maintenance-3-6bb8afdc.webp" type="image/webp">
+                    <img alt="Brainard's Greenscapes landscape maintenance crew servicing a yard in Las Cruces" decoding="async" src="/assets/images/brainards-landscape-maintenance-3-8894cb9f.jpeg" height="1400" width="616" loading="lazy">
+                </picture>
             </div>
         </section>
         <section id="services-why-353">
-            {% image "src/assets/images/leaves-pattern.jpeg", "" %}
+            <picture class="cs-bg-leaves">
+                <source media="(max-width: 600px)" srcset="/assets/images/leaves-pattern-539d8402.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/assets/images/leaves-pattern-6dd392c8.webp" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="/assets/images/leaves-pattern-9380e5da.webp" type="image/webp">
+                <img alt="" decoding="async" src="/assets/images/leaves-pattern-6d778d28.jpeg" height="2214" width="1920" loading="lazy">
+            </picture>
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern">
             <div class="cs-container">
                 <div class="cs-header">
@@ -405,8 +462,18 @@ pageJS: ["reviews-carousel.js"]
                     <p class="cs-intro">Plenty of companies can mow a lawn. Real landscape maintenance takes a team that understands desert plant biology, alkaline soil chemistry, monsoon drainage, and HOA paperwork. Here is why 19 years of Las Cruces properties have stayed with us.</p>
                 </div>
                 <div class="cs-gallery" aria-hidden="true">
-                    {% image "src/assets/images/brainards-landscape-maintenance-4.webp", "" %}
-                    {% image "src/assets/images/brainards-xeriscaping-33.jpeg", "" %}
+                    <picture class="cs-picture cs-picture-1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/brainards-landscape-maintenance-4-1433d79a.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/brainards-landscape-maintenance-4-205feadf.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/brainards-landscape-maintenance-4-205feadf.webp" type="image/webp">
+                        <img alt="" decoding="async" src="/assets/images/brainards-landscape-maintenance-4-8332961d.jpeg" height="594" width="460" loading="lazy">
+                    </picture>
+                    <picture class="cs-picture cs-picture-2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/brainards-xeriscaping-33-1d22066e.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-33-648bbf9f.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="/assets/images/brainards-xeriscaping-33-648bbf9f.webp" type="image/webp">
+                        <img alt="" decoding="async" src="/assets/images/brainards-xeriscaping-33-bb7be2be.jpeg" height="439" width="330" loading="lazy">
+                    </picture>
                 </div>
                 <ul class="cs-feature-list">
                     <li class="cs-feature">
@@ -587,7 +654,12 @@ pageJS: ["reviews-carousel.js"]
             </div>
         </section>
         <section id="testimonials-515" class="cs-reviews-carousel">
-            {% image "src/assets/images/leaves-pattern.jpeg", "" %}
+            <picture class="cs-bg-leaves">
+                <source media="(max-width: 600px)" srcset="/assets/images/leaves-pattern-5f48081d.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/assets/images/leaves-pattern-edeab06b.webp" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="/assets/images/leaves-pattern-03e85c27.webp" type="image/webp">
+                <img alt="" decoding="async" src="/assets/images/leaves-pattern-8329654d.jpeg" height="1072" width="1920" loading="lazy">
+            </picture>
             <img alt="" decoding="async" src="/assets/svgs/fern.svg" height="483" width="224" aria-hidden="true" class="cs-fern">
             <div class="cs-container">
                 <div class="cs-header">

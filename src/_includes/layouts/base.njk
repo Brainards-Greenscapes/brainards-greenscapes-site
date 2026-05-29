@@ -2,38 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ title or site.meta.title }}</title>
   <meta name="description" content="{{ description or site.meta.description }}">
-  <meta name="generator" content="Eleventy v3">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta name="generator" content="Eleventy v3.1.5">
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ title or site.meta.title }}">
   <meta property="og:description" content="{{ description or site.meta.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:image" content="{{ site.url }}{{ site.meta.ogImage }}">
-  <meta property="og:image:secure_url" content="{{ site.url }}{{ site.meta.ogImage }}">
+  <meta property="og:image" content="{{ site.meta.ogImage }}">
+  <meta property="og:image:secure_url" content="{{ site.meta.ogImage }}">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Starter Kit">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
 
-  <!-- Stylesheets -->
+  <!-- Preloads -->
+  <link rel="preload" href="/assets/svgs/logo-black.svg" as="image">
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/playfair-display-v40-latin-500.woff2" crossorigin>
+
+  <!-- Stylesheets: root + critical are render-blocking; local is deferred -->
   <link rel="stylesheet" href="/assets/css/root.css">
-  <link rel="stylesheet" href="/assets/css/critical.css">
-  <link rel="stylesheet" href="/assets/css/local.css">
   {% if pageCSS %}
     {% for css in pageCSS %}
   <link rel="stylesheet" href="/assets/css/{{ css }}">
     {% endfor %}
   {% endif %}
 
-  <!-- Preload fonts -->
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/playfair-display-v40-latin-500.woff2" crossorigin>
+  <!-- Scripts in head with defer (matches live site) -->
+  <script defer src="/assets/js/nav.js"></script>
+  {% if pageJS %}
+    {% for js in pageJS %}
+  <script defer src="/assets/js/{{ js }}"></script>
+    {% endfor %}
+  {% endif %}
+
+  <link rel="stylesheet" href="/assets/css/critical.css">
+  <link rel="stylesheet" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/css/local.css"></noscript>
+
+  <title>{{ title or site.meta.title }}</title>
 </head>
 <body>
   <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
@@ -45,12 +63,5 @@
   </main>
 
   {% include "partials/footer.njk" %}
-
-  <script src="/assets/js/nav.js" defer></script>
-  {% if pageJS %}
-    {% for js in pageJS %}
-  <script src="/assets/js/{{ js }}" defer></script>
-    {% endfor %}
-  {% endif %}
 </body>
 </html>
