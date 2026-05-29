@@ -11,12 +11,13 @@ export default function (eleventyConfig) {
 
   // ── eleventy-img shortcode ────────────────────────────────────────────────
   // Usage in Nunjucks:
-  //   {% image "src/assets/images/photo.jpeg", "Alt text", "(min-width:1024px) 1024px, 100vw", "eager" %}
+  //   {% image "src/assets/images/photo.jpeg", "Alt text", "eager", "cs-picture" %}
   //   {% image "src/assets/images/photo.jpeg", "Alt text" %}
+  //   {% image "src/assets/images/photo.jpeg", "", "eager", "cs-bg" %}
   //
   // Generates responsive <picture> with webp sources at 3 breakpoints + jpeg fallback,
   // matching the live site's pattern.
-  eleventyConfig.addShortcode("image", async function (src, alt, sizes, loading) {
+  eleventyConfig.addShortcode("image", async function (src, alt, loading, pictureClass) {
     if (!alt && alt !== "") {
       throw new Error(`Missing alt text for image: ${src}`);
     }
@@ -49,8 +50,10 @@ export default function (eleventyConfig) {
     }
 
     const loadAttr = loading === "eager" ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
+    const ariaAttr = alt === "" ? ' aria-hidden="true"' : "";
+    const picCls = pictureClass ? ` class="${pictureClass}"` : "";
 
-    return `<picture>${sources.join("")}<img alt="${alt}" decoding="async" src="${fallback.url}" width="${fallback.width}" height="${fallback.height}" ${loadAttr}></picture>`;
+    return `<picture${picCls}>${sources.join("")}<img alt="${alt}" decoding="async" src="${fallback.url}" width="${fallback.width}" height="${fallback.height}" ${loadAttr}${ariaAttr}></picture>`;
   });
 
   // Simpler shortcode for images that don't need responsive variants

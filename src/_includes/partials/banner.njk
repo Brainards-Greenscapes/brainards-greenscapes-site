@@ -10,6 +10,6 @@
     </div>
   </div>
   <div class="cs-background">
-    <img src="{{ bannerBg or '/assets/images/leaves-pattern-wide.webp' }}" alt="" width="1920" height="400" loading="eager" decoding="async">
+    {% image "src{{ bannerBg or '/assets/images/leaves-pattern-wide.webp' }}", "", "eager" %}
   </div>
 </section>
